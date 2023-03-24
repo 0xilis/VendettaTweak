@@ -7,8 +7,8 @@ let source = URL(string: "vendetta")!
 
 let vendettaPatchesBundlePath =
   FileManager.default.fileExists(
-    atPath: "/Library/Application Support/VendettaTweak/VendettaPatches.bundle")
-  ? "/Library/Application Support/VendettaTweak/VendettaPatches.bundle"
+    atPath: "/var/jb/Library/Application Support/VendettaTweak/VendettaPatches.bundle")
+  ? "/var/jb/Library/Application Support/VendettaTweak/VendettaPatches.bundle"
   : "\(Bundle.main.bundleURL.path)/VendettaPatches.bundle"
 
 class LoadHook: ClassHook<RCTCxxBridge> {
